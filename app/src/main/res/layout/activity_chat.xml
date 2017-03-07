@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/activity_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_vertical_margin">
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="@dimen/dimen_30"
+            android:layout_height="@dimen/dimen_30"
+            android:layout_centerInParent="true"
+        />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_messages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/ll_send_message_container"
+        />
+
+        <LinearLayout
+            android:id="@+id/ll_send_message_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/drawable_round"
+            android:padding="@dimen/dimen_8"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dimen_12"
+                android:layout_marginRight="@dimen/dimen_12"
+                android:layout_weight="1"
+                android:hint="type message"
+                android:textColor="@android:color/black"
+                android:padding="@dimen/dimen_12"
+            >
+                <requestFocus/>
+                </EditText>
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/drawable_button"
+                android:text="@string/btn_send"
+                android:textColor="@android:color/white"
+            />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>
+
