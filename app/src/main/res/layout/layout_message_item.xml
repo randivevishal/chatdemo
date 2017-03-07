@@ -31,7 +31,8 @@
 
             <TextView
                 android:id="@+id/tv_user_message"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:background="@drawable/drawable_round_for_user"
                 android:padding="@dimen/dimen_12"
@@ -52,7 +53,8 @@
 
             <TextView
                 android:id="@+id/tv_own_message"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:background="@drawable/drawable_round_for_own"
                 android:padding="@dimen/dimen_12"
